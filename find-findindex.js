@@ -38,7 +38,10 @@ function removeUser(usersArray, username) {
   if(location === -1){
     return undefined;
   }
-  let delUser = usersArray[location];
-  usersArray.splice(location,1);
-  return delUser;
+  else {
+    let delUser = usersArray[location];
+    usersArray.splice(location,1);
+    return delUser;
+  }
+  
 }
